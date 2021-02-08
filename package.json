@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-odin",
+  "version": "1.0.0",
+  "description": "odin project restaurant website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress --watch --mode=development"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ty-Mejia/restaurant-odin.git"
+  },
+  "keywords": [
+    "odin",
+    "project"
+  ],
+  "author": "Carlos Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ty-Mejia/restaurant-odin/issues"
+  },
+  "homepage": "https://github.com/Ty-Mejia/restaurant-odin#readme",
+  "devDependencies": {
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
