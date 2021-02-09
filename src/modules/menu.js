@@ -46,11 +46,11 @@ function loadMenu() {
 	content.appendChild(menuSection);
 
 	const foods = [
-		createFoodCard("rice", "£9", "9", "9"),
-		createFoodCard("rice", "£9", "9", "9"),
-		createFoodCard("rice", "£9", "9", "9"),
-		createFoodCard("rice", "£9", "9", "9"),
-		createFoodCard("rice", "£9", "9", "9"),
+		createFoodCard("link", "alt", "Rice", "£9"),
+		createFoodCard("link", "alt", "Rice", "£9"),
+		createFoodCard("link", "alt", "Rice", "£9"),
+		createFoodCard("link", "alt", "Rice", "£9"),
+		createFoodCard("link", "alt", "Rice", "£9"),
 	];
 
 	foods.forEach((foodCard) => {
