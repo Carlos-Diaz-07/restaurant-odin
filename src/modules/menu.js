@@ -5,10 +5,57 @@ function setTabBtnActive(id) {
 	tabBtn.classList.add("active-tab-btn");
 }
 
-// function that creates a food card entry
+function createFoodCard(src, alt, name, price) {
+	const foodCard = document.createElement("div");
+	foodCard.classList.add("food-card");
 
-// array that contains the food cards, each entry use the create food card function
+	const img = document.createElement("img");
+	img.setAttribute("src", src);
+	img.setAttribute("alt", alt);
 
-// load page, deletes class of the content container, sets a class that formats the presentation of the food cards, foreach entry in foods array append to main
+	const description = document.createElement("div");
+	description.classList.add("description");
 
-// export
+	const foodName = document.createElement("h3");
+	foodName.classList.add("food-name");
+	foodName.textContent = name;
+
+	const foodPrice = document.createElement("h2");
+	foodPrice.classList.add("food-price");
+	foodPrice.textContent = price;
+
+	description.appendChild(foodName);
+	description.appendChild(foodPrice);
+
+	foodCard.appendChild(img);
+	foodCard.appendChild(description);
+
+	return foodCard;
+}
+
+function loadMenu() {
+	const content = document.getElementById("main");
+	content.textContent = "";
+
+	const menuSection = document.createElement("section");
+	menuSection.classList.add("menu-section");
+	menuSection.setAttribute("id", "menu");
+
+	setTabBtnActive("menu-tab-btn");
+
+	content.appendChild(menuSection);
+
+	const foods = [
+		createFoodCard("rice", "£9", "9", "9"),
+		createFoodCard("rice", "£9", "9", "9"),
+		createFoodCard("rice", "£9", "9", "9"),
+		createFoodCard("rice", "£9", "9", "9"),
+		createFoodCard("rice", "£9", "9", "9"),
+	];
+
+	foods.forEach((foodCard) => {
+		menuSection.appendChild(foodCard);
+	});
+}
+
+export default loadMenu;

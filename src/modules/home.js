@@ -19,7 +19,7 @@ function createHomeSection() {
     para.textContent = 'Welcome to Guild Wars 2 Gourmet Foods, a informative little corner of the internet with the sole purpose of teaching you about the best and tastier ways to indulge yourself in Tyria'
     homeSection.appendChild(para);
 
-    return homeSection    
+    return homeSection;   
 }
 
 function loadHome() {
