@@ -1,3 +1,5 @@
+"use strict"
+
 function createHeader(id, text) {
 	const header = document.createElement("header");
 	header.setAttribute("id", id);

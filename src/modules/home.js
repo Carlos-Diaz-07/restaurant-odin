@@ -1,3 +1,5 @@
+"use strict"
+
 function setTabBtnActive(id) {
 	const activeTabBtn = document.querySelector(".active-tab-btn");
 	if (activeTabBtn) activeTabBtn.classList.remove("active-tab-btn");
