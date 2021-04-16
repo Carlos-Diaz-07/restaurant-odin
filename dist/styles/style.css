@@ -1,0 +1,60 @@
+body {
+    background-image: url('../img/wintersday-night-mood-1920x1080.webp');
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    /* background-position: center 20px; */
+    margin: 0;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    /* background-color: rgb(255, 255, 255);
+    margin: 0;
+    color: chartreuse; */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav button {
+    margin:1%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.menu-section {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    min-width:15%;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: black;
+   
+}
