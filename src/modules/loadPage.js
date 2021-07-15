@@ -11,27 +11,33 @@ function createHeader(id, text) {
 }
 
 function createTabBtn(id, text) {
-	const btn = document.createElement("button");
+	const btn = document.createElement("li");
 	btn.setAttribute("id", id);
-	const span = document.createElement("span");
-	btn.appendChild(span);
-	span.textContent = text;
-	btn.classList.add("tab");
+	btn.setAttribute("class", "");
+	const a = document.createElement("a");
+	btn.appendChild(a);
+	a.textContent = text;
+	// btn.classList.add("tab");
 	return btn;
 }
 
 function createNav(id) {
-	const nav = document.createElement("nav");
+	const nav = document.createElement("div");
+	nav.setAttribute("class", "tabs is-centered is-boxed");
+
+	const ul = document.createElement("ul");
 	nav.setAttribute("id", id);
+	
 
 	const homeTab = createTabBtn("home-tab-btn", "Home");
 	const menuTab = createTabBtn("menu-tab-btn", "Menu");
 	const contactTab = createTabBtn("contact-tab-btn", "Contact");
 
-	nav.appendChild(homeTab);
-	nav.appendChild(menuTab);
-	nav.appendChild(contactTab);
+	ul.appendChild(homeTab);
+	ul.appendChild(menuTab);
+	ul.appendChild(contactTab);
 
+	nav.appendChild(ul);
 	return nav;
 }
 

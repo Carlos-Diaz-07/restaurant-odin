@@ -1,11 +1,12 @@
 "use strict"
 
 function setTabBtnActive(id) {
-	const activeTabBtn = document.querySelector(".active-tab-btn");
-	if (activeTabBtn) activeTabBtn.classList.remove("active-tab-btn");
+	const activeTabBtn = document.querySelector(".is-active");
+	if (activeTabBtn) activeTabBtn.classList.remove("is-active");
 	const tabBtn = document.getElementById(id);
-	tabBtn.classList.add("active-tab-btn");
+	tabBtn.classList.add("is-active");
 }
+
 
 function createHomeSection() {
     const homeSection = document.createElement('section');
